@@ -1,3 +1,5 @@
+from flask_cors import CORS
+
 from app.container import Container
 from app.views import setup_views
 
@@ -10,6 +12,7 @@ def create_app():
 
     setup_views(container)
 
+    # app = CORS(app, resources=r'/api/*')
     return app
 
 

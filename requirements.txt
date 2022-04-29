@@ -1,5 +1,6 @@
 dependency-injector
 flask
+flask_cors
 pyyaml
 keras
 joblib

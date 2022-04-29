@@ -1,4 +1,4 @@
-from flask import request, jsonify
+from flask import request, jsonify, Response
 
 
 def get_prediction(prediction_service):
@@ -11,4 +11,4 @@ def get_prediction(prediction_service):
     if query is not None:
         prediction = prediction_service.predict(query)
 
-    return jsonify(prediction)
+    return jsonify(prediction), 200, {"Access-Control-Allow-Origin": "*"}
