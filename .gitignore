@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+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
+# Environments
+.env
+venv/
+
+.idea
+config.yml
+code/
+results/
+plots/
+
+app/model/*
