@@ -2,7 +2,7 @@ import {useRef, useState} from "react";
 import axios from "axios";
 
 
-const BASE_API_URL = "http://localhost/api"
+const BASE_API_URL = "http://rossiev.me/api"
 const PREDICTION_API = BASE_API_URL+"/prediction"
 
 
@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="container">
       <div className="row justify-content-center">
-        <div className="col col-auto w-50">
+        <div className="col col-md-auto w-50">
             <div className="d-flex flex-column align-items-center">
                 <h6 className="text-center">Type text. And i will analyze it.)</h6>
                 <textarea className="w-100" ref={query} rows={6} cols={10}>

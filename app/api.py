@@ -9,6 +9,6 @@ def get_prediction(prediction_service):
         "elapsed_time": "None"
     }
     if query is not None:
-        prediction = prediction_service.predict(query)
+        prediction = prediction_service.predict(query.replace("'", ''))
 
     return jsonify(prediction), 200, {"Access-Control-Allow-Origin": "*"}
